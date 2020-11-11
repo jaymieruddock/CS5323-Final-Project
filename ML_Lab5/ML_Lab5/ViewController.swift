@@ -24,9 +24,24 @@ class ViewController: UIViewController, ARSCNViewDelegate, URLSessionDelegate {
 
     @IBOutlet weak var sceneView: ARSCNView!
     
+    
+    @IBOutlet weak var handleButton: UIButton!
+    
     @IBOutlet weak var detectorTypeSwitch: UISwitch!
     
     @IBOutlet weak var detectorTypeLabel: UILabel!
+    
+    
+    
+    @IBAction func switchChanged(_ sender: Any) {
+        if(detectorTypeSwitch.isOn){
+            detectorTypeLabel.text = "Hand"
+        }
+        else{
+            detectorTypeLabel.text = "Not Hand"
+        }
+    }
+    
     
     lazy var session: URLSession = {
         let sessionConfig = URLSessionConfiguration.ephemeral
@@ -70,19 +85,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, URLSessionDelegate {
     }
     
     
-    @IBAction func switchChanged(_ sender: Any) {
-        if(detectorTypeSwitch.isOn){
-            detectorTypeLabel.text = "Hand"
-        }
-        else{
-            detectorTypeLabel.text = "Not Hand"
-        }
-    }
     
     
-    
-    
-    @IBAction func handleButtonTap(_ sender: Any) {
+    @IBAction func handleButtonClicked(_ sender: Any) {
         /*TODO: Store the captured frame as a UIImage
                 Add this image to an array (might not have to make array, just single image)
                 Upload this array/image to the tornado server by using the sendFeatures() function

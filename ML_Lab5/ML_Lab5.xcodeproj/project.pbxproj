@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B52B2BF1255CA1C700A95156 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B2BF0255CA1C700A95156 /* RingBuffer.swift */; };
+		B52B2BF4255CA79E00A95156 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B52B2BF3255CA79E00A95156 /* art.scnassets */; };
 		F9B08258255C898800826640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B08257255C898800826640 /* AppDelegate.swift */; };
 		F9B0825A255C898800826640 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B08259255C898800826640 /* SceneDelegate.swift */; };
 		F9B0825C255C898800826640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0825B255C898800826640 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		B52B2BF0255CA1C700A95156 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		B52B2BF3255CA79E00A95156 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ../../../ARSMUExample/ARSMUExample/art.scnassets; sourceTree = "<group>"; };
 		F9B08254255C898800826640 /* ML_Lab5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ML_Lab5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B08257255C898800826640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9B08259255C898800826640 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		F9B08256255C898800826640 /* ML_Lab5 */ = {
 			isa = PBXGroup;
 			children = (
+				B52B2BF3255CA79E00A95156 /* art.scnassets */,
 				F9B08257255C898800826640 /* AppDelegate.swift */,
 				F9B08259255C898800826640 /* SceneDelegate.swift */,
 				F9B0825B255C898800826640 /* ViewController.swift */,
@@ -128,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9B08264255C898F00826640 /* LaunchScreen.storyboard in Resources */,
+				B52B2BF4255CA79E00A95156 /* art.scnassets in Resources */,
 				F9B08261255C898F00826640 /* Assets.xcassets in Resources */,
 				F9B0825F255C898800826640 /* Main.storyboard in Resources */,
 			);
@@ -291,8 +295,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8722ZUWKAC;
+				DEVELOPMENT_TEAM = F69WJ27LN4;
 				INFOPLIST_FILE = ML_Lab5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,8 +315,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8722ZUWKAC;
+				DEVELOPMENT_TEAM = F69WJ27LN4;
 				INFOPLIST_FILE = ML_Lab5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

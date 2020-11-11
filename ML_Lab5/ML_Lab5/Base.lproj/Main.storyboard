@@ -15,40 +15,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JYk-SQ-q0f">
-                                <rect key="frame" x="0.0" y="44" width="414" height="682"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYk-SQ-q0f">
+                                <rect key="frame" x="0.0" y="44" width="414" height="474"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="474" id="saL-8N-a3L"/>
+                                </constraints>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gya-am-lQJ">
-                                <rect key="frame" x="161" y="751" width="95" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLC-q5-ksc">
+                                <rect key="frame" x="149" y="640" width="95" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Take Photo"/>
                                 <connections>
-                                    <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6tj-V8-Vy1"/>
+                                    <action selector="handleButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s2v-HL-QdW"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wag-Is-xya">
-                                <rect key="frame" x="184" y="794" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yd5-OF-ohp">
+                                <rect key="frame" x="172" y="698" width="49" height="31"/>
                                 <connections>
-                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="mLy-Gn-QpE"/>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="yAi-4Q-WFf"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKT-BK-Ivo">
-                                <rect key="frame" x="271" y="799" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-qJ-RTy">
+                                <rect key="frame" x="257" y="703" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fLC-q5-ksc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="5Lj-Ha-iCk"/>
+                            <constraint firstItem="zk6-qJ-RTy" firstAttribute="leading" secondItem="Yd5-OF-ohp" secondAttribute="trailing" constant="36" id="6iF-V6-hXh"/>
+                            <constraint firstItem="JYk-SQ-q0f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="99I-u8-XMI"/>
+                            <constraint firstItem="fLC-q5-ksc" firstAttribute="centerX" secondItem="Yd5-OF-ohp" secondAttribute="centerX" id="Atm-XD-Vkf"/>
+                            <constraint firstItem="JYk-SQ-q0f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ben-B0-6cX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yd5-OF-ohp" secondAttribute="bottom" constant="133" id="U38-vp-PBJ"/>
+                            <constraint firstItem="JYk-SQ-q0f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V1k-PD-HF0"/>
+                            <constraint firstItem="Yd5-OF-ohp" firstAttribute="centerY" secondItem="zk6-qJ-RTy" secondAttribute="centerY" id="gF4-RC-0yY"/>
+                            <constraint firstItem="Yd5-OF-ohp" firstAttribute="top" secondItem="fLC-q5-ksc" secondAttribute="bottom" constant="23" id="jT9-U0-2nF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="detectorTypeLabel" destination="xKT-BK-Ivo" id="JMz-Fy-KBq"/>
-                        <outlet property="detectorTypeSwitch" destination="Wag-Is-xya" id="DaZ-J8-9jv"/>
+                        <outlet property="detectorTypeLabel" destination="zk6-qJ-RTy" id="oNp-ny-v3O"/>
+                        <outlet property="detectorTypeSwitch" destination="Yd5-OF-ohp" id="3z3-5C-IgU"/>
+                        <outlet property="handleButton" destination="fLC-q5-ksc" id="Jyd-Op-2EQ"/>
                         <outlet property="sceneView" destination="JYk-SQ-q0f" id="2fP-by-pby"/>
                     </connections>
                 </viewController>
