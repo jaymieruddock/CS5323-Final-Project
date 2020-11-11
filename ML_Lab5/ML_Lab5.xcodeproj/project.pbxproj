@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B52B2BF1255CA1C700A95156 /* RIngBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B2BF0255CA1C700A95156 /* RIngBuffer.swift */; };
+		B52B2BF1255CA1C700A95156 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B2BF0255CA1C700A95156 /* RingBuffer.swift */; };
 		F9B08258255C898800826640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B08257255C898800826640 /* AppDelegate.swift */; };
 		F9B0825A255C898800826640 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B08259255C898800826640 /* SceneDelegate.swift */; };
 		F9B0825C255C898800826640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0825B255C898800826640 /* ViewController.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B52B2BF0255CA1C700A95156 /* RIngBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIngBuffer.swift; sourceTree = "<group>"; };
+		B52B2BF0255CA1C700A95156 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		F9B08254255C898800826640 /* ML_Lab5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ML_Lab5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B08257255C898800826640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9B08259255C898800826640 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				F9B08260255C898F00826640 /* Assets.xcassets */,
 				F9B08262255C898F00826640 /* LaunchScreen.storyboard */,
 				F9B08265255C898F00826640 /* Info.plist */,
-				B52B2BF0255CA1C700A95156 /* RIngBuffer.swift */,
+				B52B2BF0255CA1C700A95156 /* RingBuffer.swift */,
 			);
 			path = ML_Lab5;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9B0825C255C898800826640 /* ViewController.swift in Sources */,
-				B52B2BF1255CA1C700A95156 /* RIngBuffer.swift in Sources */,
+				B52B2BF1255CA1C700A95156 /* RingBuffer.swift in Sources */,
 				F9B08258255C898800826640 /* AppDelegate.swift in Sources */,
 				F9B0825A255C898800826640 /* SceneDelegate.swift in Sources */,
 			);
